@@ -17,12 +17,26 @@ public class Garage {
 
     // Ajout d'une voiture unique
     public void addCar(String brand, Color color, Float price){
-        //Car car = new Car(brand, color, price);
         this.vehicles.add( new Car(brand, color, price) );
     }
-    // Ajout de plusieurs voitures (collection)
+/*    // Ajout de plusieurs voitures (collection)
     public void addCar(ArrayList<Car> listCars){
         this.vehicles.addAll(listCars);
+    }
+
+    // Ajout d'une moto unique
+    public void addBike(String brand, Color color, Float price){
+        this.vehicles.add( new Bike( brand, color, price) );
+    }
+    // Ajout de plusieurs motos (collection)
+    public void addBike(ArrayList<Bike> listBikes){
+        this.vehicles.addAll(listBikes);
+    }
+*/
+    // VERSION OPTIMISEE : Une seule méthode, quelque soit le type de véhicule
+    // Ajout de plusieurs motos (collection)
+    public void addVehicle(ArrayList listVehicle){
+        this.vehicles.addAll(listVehicle);
     }
 
 

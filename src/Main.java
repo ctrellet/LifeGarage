@@ -17,12 +17,23 @@ public class Main {
 
         System.out.println(garage);
 
-        ArrayList carList = new ArrayList<Car>();
-        carList.add( new Car("peugeot", Color.GREEN, 1000F));
-        carList.add( new Car("volkswagen", Color.BLUE, 1500F));
-        carList.add( new Car("renault", Color.RED, 2000F));
+        ArrayList carList = new ArrayList();
+        carList.add( new Car("peugeot"      , Color.GREEN   , 1000F));
+        carList.add( new Car("volkswagen"   , Color.BLUE    , 1500F));
+        carList.add( new Car("renault"      , Color.RED     , 2000F));
 
-        garage.addCar( carList);
+        //garage.addCar( carList);        // Version standard
+        garage.addVehicle( carList);    // Version optimisée
+
+        System.out.println(garage);
+
+        ArrayList bikeList = new ArrayList();
+        bikeList.add( new Bike("harley"      , Color.RED     ,  800F));
+        bikeList.add( new Bike("ducati"      , Color.BLUE    , 1000F));
+        bikeList.add( new Bike("bmw"         , Color.GREEN   , 1999.9F));
+
+        //garage.addBike( bikeList);      // Version standard
+        garage.addVehicle( bikeList);    // Version optimisée
 
         System.out.println(garage);
     }

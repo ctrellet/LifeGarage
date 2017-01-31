@@ -1,15 +1,7 @@
-import java.awt.*;
-import java.util.Collection;
-import java.util.ArrayList;
-
 /**
  * Created by christophe on 30/01/17.
  */
-public class Car {
-
-    protected String brand;
-    protected Color color;
-    protected Float price;
+public class Car extends Vehicle {
 
     public Car(String brand, Color color, Float price) {
         this.brand = brand;
@@ -17,12 +9,7 @@ public class Car {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "\nCar{" +
-                "brand='" + brand + '\'' +
-                ", color=" + color +
-                ", price=" + price +
-                '}';
+    protected Float getPriceWithTax(){
+        return (float) this.price + 2F;
     }
 }

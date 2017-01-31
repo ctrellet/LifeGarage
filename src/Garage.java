@@ -34,7 +34,7 @@ public class Garage {
     }
 */
     // VERSION OPTIMISEE : Une seule méthode, quelque soit le type de véhicule
-    // Ajout de plusieurs motos (collection)
+    // Ajout de plusieurs véhicules (collection)
     public void addVehicle(ArrayList listVehicle){
         this.vehicles.addAll(listVehicle);
     }

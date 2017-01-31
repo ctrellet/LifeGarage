@@ -7,7 +7,7 @@ abstract class Vehicle {
     protected Color color;
     protected Float price;
 
-    protected abstract Float getPriceWithTax();
+    public abstract Float getPriceWithTax();
 
     @Override
     public String toString() {

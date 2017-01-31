@@ -9,7 +9,7 @@ public class Car extends Vehicle {
         this.price = price;
     }
 
-    protected Float getPriceWithTax(){
+    public Float getPriceWithTax(){
         return (float) this.price + 2F;
     }
 }

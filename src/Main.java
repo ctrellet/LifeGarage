@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.ArrayList;
 
 /**
  * Created by christophe on 30/01/17.
@@ -12,7 +13,16 @@ public class Main {
 
         Garage garage = new Garage("MY garage");
 
-        garage.addVehicle("renault", Color.RED, 999.9F);
+        garage.addCar("renault", Color.RED, 999.9F);
+
+        System.out.println(garage);
+
+        ArrayList carList = new ArrayList<Car>();
+        carList.add( new Car("peugeot", Color.GREEN, 1000F));
+        carList.add( new Car("volkswagen", Color.BLUE, 1500F));
+        carList.add( new Car("renault", Color.RED, 2000F));
+
+        garage.addCar( carList);
 
         System.out.println(garage);
     }

@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.util.Collection;
+import java.util.ArrayList;
 
 /**
  * Created by christophe on 30/01/17.
@@ -17,7 +19,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "\nCar{" +
                 "brand='" + brand + '\'' +
                 ", color=" + color +
                 ", price=" + price +

@@ -8,18 +8,23 @@ import java.util.ArrayList;
 public class Garage {
 
     private String name;
-    private ArrayList<Car> vehicles;
+    private ArrayList vehicles;
 
     public Garage(String name) {
         this.name = name;
-        this.vehicles = new ArrayList<Car>();
+        this.vehicles = new ArrayList<>();
     }
 
-    // Ajout d'un véhicule unique
-    public void addVehicle(String brand, Color color, Float price){
+    // Ajout d'une voiture unique
+    public void addCar(String brand, Color color, Float price){
         //Car car = new Car(brand, color, price);
         this.vehicles.add( new Car(brand, color, price) );
     }
+    // Ajout de plusieurs voitures (collection)
+    public void addCar(ArrayList<Car> listCars){
+        this.vehicles.addAll(listCars);
+    }
+
 
     @Override
     public String toString() {
